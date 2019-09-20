@@ -1,0 +1,99 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>  
+  <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> 
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Courses</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/trainingsearch.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#myNavbar">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">WebSiteName</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar" style="">
+					<ul class="nav navbar-nav">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span>
+								Sign Up</a></li> -->
+						<li><a href="./userRegistration.html"><span class="glyphicon glyphicon-log-in"></span>
+								Signup</a></li>
+						<li><a href="./userLogin.html"><span class="glyphicon glyphicon-log-in"></span>
+								LogIn</a></li>
+
+					</ul>
+					
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div class="container">
+		<div class="col-sm-2"></div>
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="card card-signin my-5">
+					<div class="card-body">
+						<h5 class="card-title text-center">Search Courses</h5>
+						<hr>
+						<form class="form-signin">
+							<div class="form-label-group"></div>
+							<select class="form-control input-lg" id="selectTechnology">
+								<option  value="" disabled selected>Select Technology</option>
+
+								<option value="saab">JavaScript</option>
+
+								<option value="opel">Core Java</option>
+
+								<option value="audi">Spring</option>
+							</select> <br />
+							<div class="form-label-group"></div>
+							<select class="form-control input-lg" id="selectTime">
+								<option value="" disabled selected>Select Time</option>
+								<option value="saab">Mon-Friday 7Am-2PM</option>
+
+								<option value="opel">Mon-Friday 11PM-6PM</option>
+
+								<option value="audi">Tues-Sat 7AM-2PM</option>
+							</select> <br />
+
+							<div style="text-align: left;">
+								<a href="./trainingSearchResult.html" class="btn btn-lg btn-primary text-uppercase"
+									type="submit">Search</a>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+	
+
+</body>
+</html>
